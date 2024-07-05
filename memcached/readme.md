@@ -66,8 +66,14 @@ Sending requests to the service port using payload.py can result in an amplified
 
 # remote test
 
-使用shodan搜索`port:11211 product:"Memcached"`，大约能找到16,850个可用的memcached服务
+Using Shodan to search `port:11211 product:"Memcached"`, you can find approximately 16,850 available Memcached services.
+
 ![4](assests/4.png)
 
-使用`payload.py`向服务端口发送请求，可以得到放大的响应，放大系数约为115
+"Sending requests to the service port using `payload.py` can result in an amplified response, with an amplification factor of about 115.
+
 ![3](assests/3.png)
+
+# fix suggest
+
+It is recommended to implement necessary access control policies and rate limiting in Memcached to prevent its use in distributed amplification denial-of-service attacks.
