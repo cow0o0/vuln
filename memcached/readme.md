@@ -70,7 +70,7 @@ Using Shodan to search `port:11211 product:"Memcached"`, you can find approximat
 
 ![4](assests/4.png)
 
-"Sending requests to the service port using `payload.py` can result in an amplified response, with an amplification factor of about 115.
+Sending requests to the service port using `payload.py` can result in an amplified response, with an amplification factor of about 115.
 
 ![3](assests/3.png)
 
